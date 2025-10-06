@@ -101,7 +101,7 @@
 &kp ESC    &kp Q  &kp W     &kp E     &kp R      &kp T                        &kp RBKTY  &cap_sen 6 MB1           &kp I      &kp O     &kp P     &kp BSPC
 &kp TAB    &kp A  &kp S     &kp D     &kp F      &kp G                        &kp LBKT  &mo 3           &kp K      &kp L     &kp SEMI  &kp BSLH
 &kp LSHFT  &kp Z  &kp X     &kp C     &kp V      &kp B                        &kp LBKT  &kp M           &kp COMMA  &kp DOT   &kp SQT   &kp RSHFT
-                  &kp LALT  &kp LGUI  &kp LCTRL  &mo 2  &kp SPACE    &kp RET     
+                  &kp LALT  &kp LGUI  &kp LCTRL  &mo 2  &kp SPACE    &kp RET  &none  &none  &none &none
             >;
 
             display-name = "Base";
