@@ -131,8 +131,8 @@
         sym_en {
             bindings = <
 &trans  &kp AT     &kp HASH   &kp PRCNT  &kp CARET  &kp AMPS        &kp LT            &kp GT             &kp LPAR  &kp RPAR   &kp UNDER  &trans
-&trans  &kp TILDE  &kp GRAVE  &kp SQT    &kp DQT    &kp DOLLAR      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LBRC  &kp RBRC   &kp EQUAL  &none
-&trans  &kp BSLH   &kp PIPE   &kp SLASH  &kp EXCL   &mt SEMI COMMA  &mt COLON DOT     &kp QUESTION       &kp PLUS  &kp MINUS  &kp STAR   &trans
+&trans  &kp TILDE  &kp GRAVE  &kp SQT    &kp DQT    &kp DLLR        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LBRC  &kp RBRC   &kp EQUAL  &none
+&trans  &kp BSLH   &kp PIPE   &kp FSLH   &kp EXCL   &mt SEMI COMMA  &mt COLON DOT     &kp QUESTION       &kp PLUS  &kp MINUS  &kp STAR   &trans
                               &trans     &trans     &trans          &mo 5             &trans             &trans
             >;
 
