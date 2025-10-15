@@ -90,7 +90,9 @@
                 <&macro_release>,
                 <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&to_ru>;
+                <&macro_wait_time 10>,
+                <&to_ru>,
+                <&macro_wait_time 10>;
 
             label = "EN";
             wait-ms = <0>;
