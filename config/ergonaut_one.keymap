@@ -103,6 +103,18 @@
             bindings = <&kp LPAR &kp RPAR &kp LEFT_ARROW>;
             label = "LR_PAR";
         };
+
+        test: test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&to_en>,
+                <&macro_wait_time 30>,
+                <&kp B &to_ru &kp B>,
+                <&macro_wait_time 30>;
+
+            label = "TEST";
+        };
     };
 
     keymap {
@@ -155,7 +167,7 @@
             display-name = "Symbols";
             bindings = <
 &trans         &en AT            &en HASH   &kp PRCNT    &en CARET             &en AMPS              &en LT               &en GT             &kp LPAR  &kp RPAR   &kp UNDER  &trans
-&trans         &en TILDE         &en GRAVE  &en SQT      &kp RU_DOUBLE_QUOTES  &en DLLR              &en LEFT_BRACKET     &en RIGHT_BRACKET  &en LBRC  &en RBRC   &kp EQUAL  &none
+&test          &en TILDE         &en GRAVE  &en SQT      &kp RU_DOUBLE_QUOTES  &en DLLR              &en LEFT_BRACKET     &en RIGHT_BRACKET  &en LBRC  &en RBRC   &kp EQUAL  &none
 &kp RU_NUMERO  &kp RU_BACKSLASH  &en PIPE   &kp RU_FSLH  &kp EXCL              &mt RU_SEMI RU_COMMA  &mt RU_COLON RU_DOT  &kp RU_QUESTION    &kp PLUS  &kp MINUS  &kp STAR   &trans
                                             &trans       &trans                &trans                &mo 5                &trans             &trans
             >;
