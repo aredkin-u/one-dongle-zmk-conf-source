@@ -110,8 +110,9 @@
             bindings =
                 <&to_en>,
                 <&macro_wait_time 30>,
-                <&kp B &to_ru &kp B>,
-                <&macro_wait_time 30>;
+                <&kp B &to_ru>,
+                <&macro_wait_time 30>,
+                <&kp B>;
 
             label = "TEST";
         };
