@@ -174,10 +174,10 @@
 
         en {
             bindings = <
-&kp ESC   &kp Q  &kp W  &kp E    &kp R      &kp T         &kp Y         &kp U        &kp I     &kp O  &kp P    &none
-&kp TAB   &kp A  &kp S  &kp D    &kp F      &mt LSHIFT G  &mt RSHIFT H  &kp J        &kp K     &kp L  &none    &kp BSLH
-&kp LALT  &kp Z  &kp X  &kp C    &kp V      &kp B         &kp N         &kp M        &none     &none  &kp DOT  &kp COMMA
-                        &kp DEL  &kp LCTRL  &lt 2 SPACE   &lt 3 SPACE   &lt 5 ENTER  &kp BSPC
+&kp ESC   &kp Q    &kp W  &kp E    &kp R      &kp T         &kp Y         &kp U        &kp I     &kp O  &kp P    &none
+&kp TAB   &kp A    &kp S  &kp D    &kp F      &mt LSHIFT G  &mt RSHIFT H  &kp J        &kp K     &kp L  &none    &kp BSLH
+&kp LALT  &lt 8 Z  &kp X  &kp C    &kp V      &lt 7 B       &lt 2 N       &kp M        &none     &none  &kp DOT  &kp COMMA
+                          &kp DEL  &kp LCTRL  &lt 2 SPACE   &lt 3 SPACE   &lt 5 ENTER  &kp BSPC
             >;
 
             display-name = "Base";
@@ -188,17 +188,17 @@
             bindings = <
 &kp ESC   &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &mt RU_CYRILLIC_IO RU_CYRILLIC_IE  &kp RU_CYRILLIC_EN         &kp RU_CYRILLIC_GHE                              &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
 &kp TAB   &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &mt LSHIFT RU_CYRILLIC_PE          &mt RSHIFT RU_CYRILLIC_ER  &kp RU_CYRILLIC_O                                &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&kp LALT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                  &kp RU_CYRILLIC_TE         &mt RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_DOT           &kp RU_COMMA
-                                                         &kp DEL             &kp LEFT_CONTROL    &lt 2 SPACE                        &lt 4 SPACE                &lt 5 ENTER                                      &kp DEL
+&kp LALT  &lt 8 RU_CYRILLIC_YA     &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &lt 6 RU_CYRILLIC_I                &lt 2 RU_CYRILLIC_TE       &mt RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_DOT           &kp RU_COMMA
+                                                         &kp DEL             &kp LEFT_CONTROL    &kp SPACE                          &lt 4 SPACE                &kp ENTER                                        &kp BSPC
             >;
         };
 
         nav {
             bindings = <
-&trans  &kp N1    &kp N2        &kp N3     &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9   &kp N0    &trans
-&trans  &trans    &kp UP_ARROW  &trans     &trans  &trans  &trans  &trans  &trans  &kp INS  &kp HOME  &kp PG_UP
-&trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans   &kp END   &kp PG_DN
-                                &trans     &trans  &trans  &trans  &trans  &trans
+&none  &none  &kp C_VOLUME_UP    &kp UP      &kp PG_UP  &kp HOME  &none   &none   &none   &none  &none  &none
+&none  &none  &kp LEFT           &kp DOWN    &kp RIGHT  &kp INS   &none   &none   &none   &none  &none  &none
+&none  &none  &kp C_VOLUME_DOWN  &kp C_STOP  &kp PG_DN  &kp END   &none   &none   &none   &none  &none  &none
+                                 &trans      &trans     &trans    &trans  &trans  &trans
             >;
 
             display-name = "Navigation";
@@ -209,7 +209,7 @@
 &trans  &kp AT     &kp HASH   &kp PRCNT  &kp CARET  &kp AMPS        &kp LT            &kp GT             &kp LPAR  &kp RPAR   &kp UNDER  &trans
 &trans  &kp TILDE  &kp GRAVE  &kp SQT    &kp DQT    &kp DLLR        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LBRC  &kp RBRC   &kp EQUAL  &none
 &trans  &kp BSLH   &kp PIPE   &kp FSLH   &kp EXCL   &mt SEMI COMMA  &mt COLON DOT     &kp QUESTION       &kp PLUS  &kp MINUS  &kp STAR   &trans
-                              &trans     &trans     &trans          &mo 5             &trans             &trans
+                              &trans     &trans     &trans          &trans            &mo 5              &trans
             >;
 
             display-name = "Symbols";
@@ -221,7 +221,7 @@
 &trans         &en AT            &en HASH   &kp PRCNT    &en CARET             &en AMPS              &en LT               &en GT             &kp LPAR  &kp RPAR   &kp UNDER  &trans
 &none          &en TILDE         &en GRAVE  &en SQT      &kp RU_DOUBLE_QUOTES  &en DLLR              &en LEFT_BRACKET     &en RIGHT_BRACKET  &en LBRC  &en RBRC   &kp EQUAL  &none
 &kp RU_NUMERO  &kp RU_BACKSLASH  &en PIPE   &kp RU_FSLH  &kp EXCL              &mt RU_SEMI RU_COMMA  &mt RU_COLON RU_DOT  &kp RU_QUESTION    &kp PLUS  &kp MINUS  &kp STAR   &trans
-                                            &trans       &trans                &trans                &mo 5                &trans             &trans
+                                            &trans       &trans                &trans                &trans               &mo 5              &trans
             >;
         };
 
@@ -234,6 +234,35 @@
             >;
 
             display-name = "Adjust";
+        };
+
+        num_ru {
+            display-name = "num";
+            bindings = <
+&none  &none  &none  &none   &none   &none   &kp N7        &kp NUMBER_8  &kp N9        &kp N0      &kp PLUS  &kp RU_MINUS
+&none  &none  &none  &none   &none   &none   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL   &kp STAR  &kp RU_FSLH
+&none  &none  &none  &none   &none   &none   &kp N1        &kp N2        &kp N3        &kp RU_DOT  &kp LPAR  &kp RPAR
+                     &trans  &trans  &trans  &trans        &trans        &trans
+            >;
+        };
+
+        num_en {
+            display-name = "num";
+            bindings = <
+&none  &none  &none  &none   &none   &none   &kp N7        &kp NUMBER_8  &kp N9        &kp N0     &kp PLUS  &kp MINUS
+&none  &none  &none  &none   &none   &none   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL  &kp STAR  &kp FSLH
+&none  &none  &none  &none   &none   &none   &kp N1        &kp N2        &kp N3        &kp DOT    &kp LPAR  &kp RPAR
+                     &trans  &trans  &trans  &trans        &trans        &trans
+            >;
+        };
+
+        F_keys {
+            bindings = <
+&none  &none  &none  &none   &none   &none   &kp F1  &kp F2   &kp F3   &kp F4   &none  &none
+&none  &none  &none  &none   &none   &none   &kp F5  &kp F6   &kp F7   &kp F8   &none  &none
+&none  &none  &none  &none   &none   &none   &kp F9  &kp F10  &kp F11  &kp F12  &none  &none
+                     &trans  &trans  &trans  &trans  &trans   &trans
+            >;
         };
     };
 };
