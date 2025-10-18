@@ -206,10 +206,10 @@
 
         sym_en {
             bindings = <
-&trans  &kp AT     &kp HASH   &kp PRCNT  &kp CARET  &kp AMPS        &kp LT            &kp GT             &kp LPAR  &kp RPAR   &kp UNDER  &trans
-&trans  &kp TILDE  &kp GRAVE  &kp SQT    &kp DQT    &kp DLLR        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LBRC  &kp RBRC   &kp EQUAL  &none
-&trans  &kp BSLH   &kp PIPE   &kp FSLH   &kp EXCL   &mt SEMI COMMA  &mt COLON DOT     &kp QUESTION       &kp PLUS  &kp MINUS  &kp STAR   &trans
-                              &trans     &trans     &trans          &trans            &mo 5              &trans
+&trans  &kp AT     &kp HASH   &kp PRCNT  &kp CARET  &kp AMPS  &kp LT            &kp GT             &kp LPAR   &kp RPAR   &kp PLUS   &kp MINUS
+&trans  &kp TILDE  &kp GRAVE  &kp SQT    &kp DQT    &kp DLLR  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LBRC   &kp RBRC   &kp ASTRK  &kp FSLH
+&trans  &kp BSLH   &kp PIPE   &kp FSLH   &kp EXCL   &kp SEMI  &kp COLON         &kp QUESTION       &kp UNDER  &kp EQUAL  &kp DOT    &kp COMMA
+                              &trans     &trans     &trans    &trans            &mo 5              &trans
             >;
 
             display-name = "Symbols";
@@ -218,10 +218,10 @@
         sym_ru {
             display-name = "Symbols";
             bindings = <
-&trans         &en AT            &en HASH   &kp PRCNT    &en CARET             &en AMPS              &en LT               &en GT             &kp LPAR  &kp RPAR   &kp UNDER  &trans
-&none          &en TILDE         &en GRAVE  &en SQT      &kp RU_DOUBLE_QUOTES  &en DLLR              &en LEFT_BRACKET     &en RIGHT_BRACKET  &en LBRC  &en RBRC   &kp EQUAL  &none
-&kp RU_NUMERO  &kp RU_BACKSLASH  &en PIPE   &kp RU_FSLH  &kp EXCL              &mt RU_SEMI RU_COMMA  &mt RU_COLON RU_DOT  &kp RU_QUESTION    &kp PLUS  &kp MINUS  &kp STAR   &trans
-                                            &trans       &trans                &trans                &trans               &mo 5              &trans
+&trans         &en AT            &en HASH   &kp PRCNT    &en CARET             &en AMPS     &en LT            &en GT             &kp LPAR   &kp RPAR   &kp PLUS    &kp MINUS
+&none          &en TILDE         &en GRAVE  &en SQT      &kp RU_DOUBLE_QUOTES  &en DLLR     &en LEFT_BRACKET  &en RIGHT_BRACKET  &en LBRC   &en RBRC   &kp STAR    &kp RU_FSLH
+&kp RU_NUMERO  &kp RU_BACKSLASH  &en PIPE   &kp RU_FSLH  &kp EXCL              &kp RU_SEMI  &kp RU_COLON      &kp RU_QUESTION    &kp UNDER  &kp EQUAL  &kp RU_DOT  &kp RU_COMMA
+                                            &trans       &trans                &trans       &trans            &mo 5              &trans
             >;
         };
 
@@ -239,9 +239,9 @@
         num_ru {
             display-name = "num";
             bindings = <
-&none  &none  &none  &none   &none   &none   &kp N7        &kp NUMBER_8  &kp N9        &kp N0      &kp PLUS  &kp RU_MINUS
-&none  &none  &none  &none   &none   &none   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL   &kp STAR  &kp RU_FSLH
-&none  &none  &none  &none   &none   &none   &kp N1        &kp N2        &kp N3        &kp RU_DOT  &kp LPAR  &kp RPAR
+&none  &none  &none  &none   &none   &none   &kp N7        &kp NUMBER_8  &kp N9        &kp N0     &kp PLUS    &kp RU_MINUS
+&none  &none  &none  &none   &none   &none   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none      &kp STAR    &kp RU_FSLH
+&none  &none  &none  &none   &none   &none   &kp N1        &kp N2        &kp N3        &kp EQUAL  &kp RU_DOT  &kp RU_COMMA
                      &trans  &trans  &trans  &trans        &trans        &trans
             >;
         };
@@ -250,8 +250,8 @@
             display-name = "num";
             bindings = <
 &none  &none  &none  &none   &none   &none   &kp N7        &kp NUMBER_8  &kp N9        &kp N0     &kp PLUS  &kp MINUS
-&none  &none  &none  &none   &none   &none   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL  &kp STAR  &kp FSLH
-&none  &none  &none  &none   &none   &none   &kp N1        &kp N2        &kp N3        &kp DOT    &kp LPAR  &kp RPAR
+&none  &none  &none  &none   &none   &none   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none      &kp STAR  &kp FSLH
+&none  &none  &none  &none   &none   &none   &kp N1        &kp N2        &kp N3        &kp EQUAL  &kp DOT   &kp COMMA
                      &trans  &trans  &trans  &trans        &trans        &trans
             >;
         };
