@@ -66,7 +66,7 @@
         boot_l {
             bindings = <&boot_lo>;
             key-positions = <0 12>;
-            layers = <3>;
+            layers = <2>;
         };
 
         R_sh {
