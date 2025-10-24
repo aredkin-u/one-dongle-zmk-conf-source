@@ -183,6 +183,7 @@
         compatible = "zmk,keymap";
 
         en {
+            display-name = "Base";
             bindings = <
 &kp ESC           &kp Q  &kp W  &kp E    &kp R      &kp T        &kp Y        &kp U        &kp I     &kp O  &kp P    &none
 &mt CAPSLOCK TAB  &kp A  &kp S  &kp D    &kp F      &kp G        &kp H        &kp J        &kp K     &kp L  &none    &kp BSLH
@@ -190,7 +191,6 @@
                                 &kp DEL  &kp LCTRL  &lt 7 SPACE  &lt 3 SPACE  &lt 2 ENTER  &kp BSPC
             >;
 
-            display-name = "Base";
         };
 
         ru {
@@ -204,6 +204,7 @@
         };
 
         F_key {
+            display-name = "F keys";
             bindings = <
 &none  &none  &kp F1  &kp F2   &kp F3   &kp F4   &none   &none   &none   &none  &none  &none
 &none  &none  &kp F5  &kp F6   &kp F7   &kp F8   &none   &none   &none   &none  &none  &none
@@ -211,10 +212,10 @@
                       &trans   &trans   &trans   &trans  &trans  &trans
             >;
 
-            display-name = "F keys";
         };
 
         sym_en {
+            display-name = "Symbols en";
             bindings = <
 &trans  &kp AT     &kp HASH   &kp PRCNT  &kp CARET  &kp AMPS  &kp LT            &kp GT             &kp LPAR   &kp RPAR   &kp PLUS   &kp MINUS
 &trans  &kp TILDE  &kp GRAVE  &kp SQT    &kp DQT    &kp DLLR  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LBRC   &kp RBRC   &kp ASTRK  &kp FSLH
@@ -222,11 +223,10 @@
                               &trans     &trans     &trans    &trans            &trans             &trans
             >;
 
-            display-name = "Symbols";
         };
 
         sym_ru {
-            display-name = "Symbols";
+            display-name = "Symbols ru";
             bindings = <
 &trans         &en AT            &en HASH   &kp PRCNT    &en CARET             &en AMPS     &en LT            &en GT             &kp LPAR   &kp RPAR   &kp PLUS    &kp MINUS
 &none          &en TILDE         &en GRAVE  &en SQT      &kp RU_DOUBLE_QUOTES  &en DLLR     &en LEFT_BRACKET  &en RIGHT_BRACKET  &en LBRC   &en RBRC   &kp STAR    &kp RU_FSLH
@@ -236,6 +236,7 @@
         };
 
         adj {
+            display-name = "Adjust";
             bindings = <
 &bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
 &none        &none  &kp F5  &kp F6   &kp F7   &kp F8   &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &none         &studio_unlock
@@ -243,11 +244,10 @@
                             &none    &none    &none    &none         &none         &none
             >;
 
-            display-name = "Adjust";
         };
 
         num_ru {
-            display-name = "num";
+            display-name = "num ru";
             bindings = <
 &none  &none  &kp C_VOLUME_UP    &kp UP    &kp PG_UP  &kp HOME  &kp N7        &kp NUMBER_8  &kp N9        &kp N0     &kp PLUS    &kp RU_MINUS
 &none  &none  &kp LEFT           &kp DOWN  &kp RIGHT  &kp INS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none      &kp STAR    &kp RU_FSLH
@@ -257,7 +257,7 @@
         };
 
         num_en {
-            display-name = "num";
+            display-name = "num en";
             bindings = <
 &none  &none  &kp C_VOLUME_UP    &kp UP    &kp PG_UP  &kp HOME  &kp N7        &kp NUMBER_8  &kp N9        &kp N0     &kp PLUS  &kp MINUS
 &none  &none  &kp LEFT           &kp DOWN  &kp RIGHT  &kp INS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none      &kp STAR  &kp FSLH
