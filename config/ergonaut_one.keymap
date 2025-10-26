@@ -270,20 +270,20 @@
         num_ru {
             display-name = "num ru";
             bindings = <
-&none  &none  &kp C_VOLUME_UP    &kp UP    &kp PG_UP  &kp HOME  &kp N7        &kp NUMBER_8  &kp N9        &kp N0     &kp PLUS    &kp RU_MINUS
-&none  &none  &kp LEFT           &kp DOWN  &kp RIGHT  &kp INS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none      &kp STAR    &kp RU_FSLH
-&none  &none  &kp C_VOLUME_DOWN  &kp C_PP  &kp PG_DN  &kp END   &kp N1        &kp N2        &kp N3        &kp EQUAL  &kp RU_DOT  &kp RU_COMMA
-                                 &trans    &trans     &trans    &trans        &trans        &trans
+&none  &none  &kp C_VOLUME_UP    &kp UP    &kp PG_UP  &kp HOME    &kp N7        &kp NUMBER_8  &kp N9        &kp N0     &kp PLUS    &kp RU_MINUS
+&none  &none  &kp LEFT           &kp DOWN  &kp RIGHT  &kp INS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none      &kp STAR    &kp RU_FSLH
+&none  &none  &kp C_VOLUME_DOWN  &kp C_PP  &kp PG_DN  &kp END     &kp N1        &kp N2        &kp N3        &kp EQUAL  &kp RU_DOT  &kp RU_COMMA
+                                 &trans    &none      &kp LSHIFT  &trans        &trans        &trans
             >;
         };
 
         num_en {
             display-name = "num en";
             bindings = <
-&none  &none  &kp C_VOLUME_UP    &kp UP    &kp PG_UP  &kp HOME  &kp N7        &kp NUMBER_8  &kp N9        &kp N0     &kp PLUS  &kp MINUS
-&none  &none  &kp LEFT           &kp DOWN  &kp RIGHT  &kp INS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none      &kp STAR  &kp FSLH
-&none  &none  &kp C_VOLUME_DOWN  &kp C_PP  &kp PG_DN  &kp END   &kp N1        &kp N2        &kp N3        &kp EQUAL  &kp DOT   &kp COMMA
-                                 &trans    &trans     &trans    &trans        &trans        &trans
+&none  &none  &kp C_VOLUME_UP    &kp UP    &kp PG_UP  &kp HOME    &kp N7        &kp NUMBER_8  &kp N9        &kp N0     &kp PLUS  &kp MINUS
+&none  &none  &kp LEFT           &kp DOWN  &kp RIGHT  &kp INS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none      &kp STAR  &kp FSLH
+&none  &none  &kp C_VOLUME_DOWN  &kp C_PP  &kp PG_DN  &kp END     &kp N1        &kp N2        &kp N3        &kp EQUAL  &kp DOT   &kp COMMA
+                                 &trans    &none      &kp LSHIFT  &trans        &trans        &trans
             >;
         };
     };
