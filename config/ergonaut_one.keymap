@@ -192,14 +192,14 @@
         bsps_: bsps_ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp BACKSPACE &key_repeat>;
+            bindings = <&kp BACKSPACE>;
             label = "BSPS_";
         };
 
         ent_: ent_ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ENTER &key_repeat>;
+            bindings = <&kp ENTER>;
             label = "ENT_";
         };
     };
