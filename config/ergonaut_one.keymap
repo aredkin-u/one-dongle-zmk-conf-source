@@ -254,7 +254,7 @@
             bindings = <
 &kp AT    &kp HASH   &kp PRCNT  &kp CARET  &kp AMPS  &none     &kp LT            &kp GT             &kp LPAR   &kp RPAR   &kp PLUS   &kp MINUS
 &kp HASH  &kp TILDE  &kp GRAVE  &kp SQT    &kp DQT   &kp DLLR  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LBRC   &kp RBRC   &kp ASTRK  &kp FSLH
-&kp LALT  &kp BSLH   &kp PIPE   &kp FSLH   &none     &kp EXCL  &kp QUESTION      &none              &kp UNDER  &kp EQUAL  &kp SEMI   &kp COLON
+&kp LALT  &kp BSLH   &kp PIPE   &kp FSLH   &none     &kp EXCL  &kp QUESTION      &none              &kp UNDER  &kp EQUAL  &kp COLON  &kp SEMICOLON
                                 &trans     &trans    &trans    &trans            &trans             &trans
             >;
         };
@@ -262,9 +262,9 @@
         sym_ru {
             display-name = "Symbols ru";
             bindings = <
-&en AT         &en HASH          &kp PRCNT  &en CARET    &en AMPS              &kp RU_CYRILLIC_IO  &en LT            &en GT                     &kp LPAR   &kp RPAR   &kp PLUS     &kp MINUS
-&kp RU_NUMERO  &en TILDE         &en GRAVE  &en SQT      &kp RU_DOUBLE_QUOTES  &en DLLR            &en LEFT_BRACKET  &en RIGHT_BRACKET          &en LBRC   &en RBRC   &kp STAR     &kp RU_FSLH
-&kp LALT       &kp RU_BACKSLASH  &en PIPE   &kp RU_FSLH  &none                 &kp EXCL            &kp RU_QUESTION   &kp RU_CYRILLIC_HARD_SIGN  &kp UNDER  &kp EQUAL  &kp RU_SEMI  &kp RU_COLON
+&en AT         &en HASH          &kp PRCNT  &en CARET    &en AMPS              &kp RU_CYRILLIC_IO  &en LT            &en GT                     &kp LPAR   &kp RPAR   &kp PLUS      &kp MINUS
+&kp RU_NUMERO  &en TILDE         &en GRAVE  &en SQT      &kp RU_DOUBLE_QUOTES  &en DLLR            &en LEFT_BRACKET  &en RIGHT_BRACKET          &en LBRC   &en RBRC   &kp STAR      &kp RU_FSLH
+&kp LALT       &kp RU_BACKSLASH  &en PIPE   &kp RU_FSLH  &none                 &kp EXCL            &kp RU_QUESTION   &kp RU_CYRILLIC_HARD_SIGN  &kp UNDER  &kp EQUAL  &kp RU_COLON  &kp RU_SEMI
                                             &trans       &trans                &trans              &trans            &trans                     &trans
             >;
         };
