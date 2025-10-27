@@ -65,7 +65,7 @@
 
         boot_l {
             bindings = <&boot_lo>;
-            key-positions = <0 12>;
+            key-positions = <11 23>;
             layers = <2>;
         };
 
