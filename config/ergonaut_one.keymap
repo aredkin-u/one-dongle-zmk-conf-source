@@ -120,7 +120,7 @@
             bindings = <&sk LS(LCTRL)>, <&macro_wait_time 300>, <&kp N1>;
 
             label = "TO_EN";
-            wait-ms = <350>;
+            wait-ms = <20>;
             tap-ms = <60>;
         };
 
