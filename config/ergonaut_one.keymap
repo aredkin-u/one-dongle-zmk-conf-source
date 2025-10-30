@@ -117,7 +117,8 @@
         to_en: to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(N1))>;
+            bindings = <&sk LS(LCTRL)>, <&macro_wait_time 300>, <&kp N1>;
+
             label = "TO_EN";
             wait-ms = <350>;
             tap-ms = <60>;
