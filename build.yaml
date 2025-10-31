@@ -9,4 +9,4 @@ include:
   - board: seeeduino_xiao_ble
     shield: settings_reset
   - board: seeeduino_xiao_ble
-    shield: charybdis_dongle prospector_adapter
+    shield: ergonaut_one_dongle prospector_adapter
