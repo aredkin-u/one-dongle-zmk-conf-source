@@ -87,7 +87,7 @@
 
         u_ent {
             bindings = <&ent_>;
-            key-positions = <31 32 33>;
+            key-positions = <40 41>;
         };
 
         tun_toFkeys {
@@ -97,9 +97,8 @@
         };
 
         test_uts {
-            bindings = <&to_ru>;
+            bindings = <&to_Fkeys>;
             key-positions = <27 28>;
-            layers = <2>;
         };
     };
 
@@ -232,7 +231,7 @@
             display-name = "Base";
             bindings = <
 &lt 2 ESC         &kp Q  &kp W  &kp E  &kp R      &kp T      &kp Y  &kp U          &kp I  &kp O  &kp P    &none
-&mt CAPSLOCK TAB  &kp A  &kp S  &kp D  &kp F      &kp G      &kp H  &kp J          &kp K  &kp L  &none    &kp BSLH
+&mt CAPSLOCK TAB  &kp A  &kp S  &kp D  &kp F      &kp G      &kp H  &kp J          &kp K  &kp L  &none    &kp SLASH
 &kp LALT          &kp Z  &kp X  &kp C  &kp V      &kp B      &kp N  &kp M          &none  &none  &kp DOT  &kp COMMA
                                 &mo 7  &kp LCTRL  &kp SPACE  &mo 3  &kp BACKSPACE  &mo 2
             >;
