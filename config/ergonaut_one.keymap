@@ -219,8 +219,7 @@
         to_Fkeys: to_Fkeys {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&mo 2>;
-
+            bindings = <&tog 2>;
             label = "TO_FKEYS";
         };
     };
