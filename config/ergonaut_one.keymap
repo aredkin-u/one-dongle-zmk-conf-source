@@ -38,28 +38,31 @@
 
         LRPar {
             bindings = <&LR_Par>;
-            key-positions = <9 30>;
+            key-positions = <7 8>;
+            layers = <3 4 1 0>;
         };
 
         lr_brc {
             bindings = <&LR_brc>;
-            key-positions = <21 30>;
+            key-positions = <19 20>;
+            layers = <3 0>;
         };
 
         lr_brs {
             bindings = <&LR_brs>;
-            key-positions = <33 30>;
+            key-positions = <31 32>;
+            layers = <3 4>;
         };
 
         lr_uDQT {
             bindings = <&LR_ruDKT>;
-            key-positions = <7 30>;
+            key-positions = <6 7>;
             layers = <1 4>;
         };
 
         lr_enDQT {
             bindings = <&LR_enDKT>;
-            key-positions = <7 30>;
+            key-positions = <6 7>;
             layers = <0 3>;
         };
 
@@ -100,6 +103,12 @@
             bindings = <&pss>;
             key-positions = <41 40>;
             layers = <0>;
+        };
+
+        en_Lr_Brc {
+            bindings = <&enBrct>;
+            key-positions = <19 20>;
+            layers = <1 4>;
         };
     };
 
@@ -229,6 +238,19 @@
             #binding-cells = <0>;
             bindings = <&kp LS(R) &kp I &kp Y &kp N2 &kp N1 &kp N4 &kp LS(B) &kp L &kp A &kp U &kp N6 &kp N2 &kp LS(V) &kp V>;
             label = "PSS";
+        };
+
+        enBrct: enBrct {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&to_en>,
+                <&macro_wait_time 5>,
+                <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>,
+                <&macro_wait_time 5>,
+                <&to_ru>;
+
+            label = "ENBRCT";
         };
     };
 
