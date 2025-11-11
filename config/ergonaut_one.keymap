@@ -98,7 +98,7 @@
 
         pss {
             bindings = <&pss>;
-            key-positions = <36 37 41>;
+            key-positions = <41 40>;
             layers = <0>;
         };
     };
