@@ -48,6 +48,12 @@
             layers = <3 0>;
         };
 
+        en_Lr_Brc {
+            bindings = <&enBrct>;
+            key-positions = <19 20>;
+            layers = <1 4>;
+        };
+
         lr_brs {
             bindings = <&LR_brs>;
             key-positions = <31 32>;
@@ -104,12 +110,6 @@
             key-positions = <41 40>;
             layers = <0>;
         };
-
-        en_Lr_Brc {
-            bindings = <&enBrct>;
-            key-positions = <19 20>;
-            layers = <1 4>;
-        };
     };
 
     macros {
@@ -129,6 +129,24 @@
             bindings = <&sk LS(LCTRL)>, <&macro_wait_time 300>, <&kp N1>;
 
             label = "TO_EN";
+            wait-ms = <20>;
+            tap-ms = <60>;
+        };
+
+        to_ru_fast: to_ru_fast {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LS(LC(N2))>;
+            label = "TO_RU_FAST";
+            wait-ms = <20>;
+            tap-ms = <60>;
+        };
+
+        to_en_fast: to_en_fast {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LS(RC(N1))>;
+            label = "TO_EN_FAST";
             wait-ms = <20>;
             tap-ms = <60>;
         };
@@ -182,6 +200,13 @@
             #binding-cells = <0>;
             bindings = <&kp LBKT &kp RBKT &kp LEFT_ARROW>;
             label = "LR_BRC";
+        };
+
+        enBrct: enBrct {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to_en_fast &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW &to_ru_fast>;
+            label = "ENBRCT";
         };
 
         LR_brs: LR_brs {
@@ -240,30 +265,6 @@
             label = "PSS";
         };
 
-        enBrct: enBrct {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to_en_fast &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW &to_ru_fast>;
-            label = "ENBRCT";
-        };
-
-        to_ru_fast: to_ru_fast {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk LS(LC(N2))>;
-            label = "TO_RU_FAST";
-            wait-ms = <20>;
-            tap-ms = <60>;
-        };
-
-        to_en_fast: to_en_fast {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk LS(RC(N1))>;
-            label = "TO_EN_FAST";
-            wait-ms = <20>;
-            tap-ms = <60>;
-        };
     };
 
     keymap {
