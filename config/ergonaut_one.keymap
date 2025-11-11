@@ -60,6 +60,12 @@
             layers = <3 4>;
         };
 
+        en_lr_Brs {
+            bindings = <&en_LR_brs>;
+            key-positions = <31 32>;
+            layers = <1 4>;
+        };
+
         lr_uDQT {
             bindings = <&LR_ruDKT>;
             key-positions = <6 7>;
@@ -111,11 +117,6 @@
             layers = <0>;
         };
 
-        en_lr_Brs {
-            bindings = <&en_LR_brs>;
-            key-positions = <31 32>;
-            layers = <1 4>;
-        };
     };
 
     macros {
@@ -222,6 +223,13 @@
             label = "LR_BRS";
         };
 
+        en_LR_brs: en_LR_brs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to_en_fast &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW &to_ru_fast>;
+            label = "EN_LR_BRS";
+        };
+
         LR_ruDKT: LR_ruDKT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -269,13 +277,6 @@
             #binding-cells = <0>;
             bindings = <&kp LS(R) &kp I &kp Y &kp N2 &kp N1 &kp N4 &kp LS(B) &kp L &kp A &kp U &kp N6 &kp N2 &kp LS(V) &kp V>;
             label = "PSS";
-        };
-
-        en_LR_brs: en_LR_brs {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to_en_fast &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW &to_ru_fast>;
-            label = "EN_LR_BRS";
         };
     };
 
