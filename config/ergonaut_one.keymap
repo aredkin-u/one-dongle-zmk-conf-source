@@ -87,13 +87,18 @@
 
         u_ent {
             bindings = <&ent_>;
-            key-positions = <40 41>;
+            key-positions = <32 33>;
         };
 
         tun_toFkeys {
             bindings = <&to_Fkeys>;
             key-positions = <28 29>;
             layers = <0 1 2>;
+        };
+
+        pss {
+            bindings = <&pss>;
+            key-positions = <36 37 41>;
         };
     };
 
@@ -216,6 +221,13 @@
             #binding-cells = <0>;
             bindings = <&tog 2>;
             label = "TO_FKEYS";
+        };
+
+        pss: pss {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(R) &kp I &kp Y &kp N2 &kp N1 &kp N4 &kp LS(B) &kp L &kp A &kp U &kp N6 &kp N2 &kp LS(V) &kp V>;
+            label = "PSS";
         };
     };
 
