@@ -110,6 +110,12 @@
             key-positions = <41 40>;
             layers = <0>;
         };
+
+        en_lr_Brs {
+            bindings = <&en_LR_brs>;
+            key-positions = <31 32>;
+            layers = <1 4>;
+        };
     };
 
     macros {
@@ -265,6 +271,12 @@
             label = "PSS";
         };
 
+        en_LR_brs: en_LR_brs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to_en_fast &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW &to_ru_fast>;
+            label = "EN_LR_BRS";
+        };
     };
 
     keymap {
