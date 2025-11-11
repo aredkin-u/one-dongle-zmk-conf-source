@@ -38,28 +38,28 @@
 
         LRPar {
             bindings = <&LR_Par>;
-            key-positions = <8 9>;
+            key-positions = <9 30>;
         };
 
         lr_brc {
             bindings = <&LR_brc>;
-            key-positions = <20 21>;
+            key-positions = <21 30>;
         };
 
         lr_brs {
             bindings = <&LR_brs>;
-            key-positions = <32 33>;
+            key-positions = <33 30>;
         };
 
         lr_uDQT {
             bindings = <&LR_ruDKT>;
-            key-positions = <6 7>;
+            key-positions = <7 30>;
             layers = <1 4>;
         };
 
         lr_enDQT {
             bindings = <&LR_enDKT>;
-            key-positions = <6 7>;
+            key-positions = <7 30>;
             layers = <0 3>;
         };
 
@@ -99,6 +99,7 @@
         pss {
             bindings = <&pss>;
             key-positions = <36 37 41>;
+            layers = <0>;
         };
     };
 
