@@ -57,7 +57,7 @@
         lr_brs {
             bindings = <&LR_brs>;
             key-positions = <31 32>;
-            layers = <3 4>;
+            layers = <0 3>;
         };
 
         en_lr_Brs {
@@ -116,7 +116,6 @@
             key-positions = <41 40>;
             layers = <0>;
         };
-
     };
 
     macros {
