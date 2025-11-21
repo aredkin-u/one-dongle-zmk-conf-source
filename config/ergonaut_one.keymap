@@ -122,7 +122,7 @@
             slow-release;
             key-positions = <41 40>; // CTRL+{numbers}
             bindings = <&mo 3>;
-};
+        };
 
     };
 
