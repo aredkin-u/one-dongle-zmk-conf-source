@@ -113,7 +113,7 @@
 
         pss {
             bindings = <&pss>;
-            key-positions = <41 40>;
+            key-positions = <41 35>;
             layers = <0>;
         };
 
