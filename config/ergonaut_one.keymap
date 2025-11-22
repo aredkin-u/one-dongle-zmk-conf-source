@@ -115,6 +115,12 @@
             key-positions = <41 40>;
             bindings = <&mo 2>;
         };
+
+        hue {
+            bindings = <&hueplet>;
+            key-positions = <29 28>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -275,6 +281,13 @@
             #binding-cells = <0>;
             bindings = <&kp LS(R) &kp I &kp Y &kp N2 &kp N1 &kp N4 &kp LS(B) &kp L &kp A &kp U &kp N6 &kp N2 &kp LS(V) &kp V>;
             label = "PSS";
+        };
+
+        hueplet: hueplet {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp L &kp A &kp D &kp I &kp M &kp I &kp R &kp SPACE &kp S &kp H &kp A &kp H &kp I &kp D &kp Z &kp H &kp A &kp N &kp Y &kp A &kp N>;
+            label = "HUEPLET";
         };
     };
 
