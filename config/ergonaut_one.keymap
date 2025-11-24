@@ -93,11 +93,6 @@
             key-positions = <16 17>;
         };
 
-        u_del {
-            bindings = <&del_>;
-            key-positions = <30 31>;
-        };
-
         u_ent {
             bindings = <&ent_>;
             key-positions = <32 33>;
@@ -255,13 +250,6 @@
             label = "BOOTL";
         };
 
-        del_: bsps_ {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp DELETE>;
-            label = "BSPS_";
-        };
-
         ent_: ent_ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -310,17 +298,17 @@
 &lt 2 ESC         &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE  &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
 &mt CAPSLOCK TAB  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE  &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
 &kp LALT          &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_DOT           &kp RU_COMMA
-                                                                 &mo 5               &kp LEFT_CONTROL    &kp SPACE           &mo 4               &kp BACKSPACE              &mo 2
+                                                                 &mo 5               &kp LEFT_CONTROL    &kp SPACE           &mo 4               &kp BACKSPACE              &kp DEL
             >;
         };
 
         F_key {
             display-name = "F keys";
             bindings = <
-&none     &kp F1      &kp F2  &kp F3  &kp F4            &kp F5   &kp N7        &kp N8        &kp N9        &kp NUMBER_0       &none  &none
-&kp F6    &kp F7      &kp F8  &kp F9  &kp F10           &kp F11  &kp NUMBER_4  &kp NUMBER_5  &kp N6        &kp RIGHT_CONTROL  &none  &none
-&kp LALT  &kp LSHIFT  &none   &none   &none             &kp F12  &kp NUMBER_1  &kp N2        &kp NUMBER_3  &kp RSHIFT         &none  &none
-                              &trans  &kp LEFT_CONTROL  &trans   &trans        &trans        &trans
+&none     &kp F1      &kp F2  &kp F3  &kp F4   &kp F5   &kp N7        &kp N8        &kp N9        &kp NUMBER_0       &none  &none
+&kp F6    &kp F7      &kp F8  &kp F9  &kp F10  &kp F11  &kp NUMBER_4  &kp NUMBER_5  &kp N6        &kp RIGHT_CONTROL  &none  &none
+&kp LALT  &kp LSHIFT  &none   &none   &none    &kp F12  &kp NUMBER_1  &kp N2        &kp NUMBER_3  &kp RSHIFT         &none  &none
+                              &trans  &trans   &trans   &trans        &trans        &trans
             >;
         };
 
@@ -350,7 +338,7 @@
 &none     &kp PAUSE_BREAK  &kp C_VOLUME_UP    &kp UP    &kp PG_UP  &kp HOME    &kp N7        &kp NUMBER_8   &kp N9             &kp N0     &kp PLUS    &kp RU_MINUS
 &none     &kp PRINTSCREEN  &kp LEFT           &kp DOWN  &kp RIGHT  &kp INS     &kp NUMBER_4  &kp N5         &kp NUMBER_6       &none      &kp STAR    &kp RU_FSLH
 &kp LALT  &none            &kp C_VOLUME_DOWN  &kp C_PP  &kp PG_DN  &kp END     &kp N1        &kp N2         &kp N3             &kp EQUAL  &kp RU_DOT  &kp RU_COMMA
-                                              &trans    &none      &kp LSHIFT  &kp RSHIFT    &kp RIGHT_ALT  &kp RIGHT_CONTROL
+                                              &trans    &trans     &kp LSHIFT  &kp RSHIFT    &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
 
