@@ -217,6 +217,7 @@
             #binding-cells = <0>;
             bindings = <&kp LPAR &kp RPAR &kp LEFT_ARROW>;
             label = "LR_PAR";
+            wait-ms = <100>;
         };
 
         LR_brc: LR_brc {
