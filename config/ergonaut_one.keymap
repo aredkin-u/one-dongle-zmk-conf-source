@@ -62,42 +62,49 @@
             bindings = <&LR_Par>;
             key-positions = <7 8>;
             layers = <3 4 1 0>;
+            slow-release;
         };
 
         lr_brc {
             bindings = <&LR_brc>;
             key-positions = <19 20>;
             layers = <3 0>;
+            slow-release;
         };
 
         en_Lr_Brc {
             bindings = <&enBrct>;
             key-positions = <19 20>;
             layers = <1 4>;
+            slow-release;
         };
 
         lr_brs {
             bindings = <&LR_brs>;
             key-positions = <31 32>;
             layers = <0 3>;
+            slow-release;
         };
 
         en_lr_Brs {
             bindings = <&en_LR_brs>;
             key-positions = <31 32>;
             layers = <1 4>;
+            slow-release;
         };
 
-        lr_uDQT {
+        lr_DQT {
             bindings = <&LR_DKT>;
             key-positions = <6 7>;
-            layers = <1 4>;
+            layers = <0 3>;
+            slow-release;
         };
 
         lr_enDQT {
             bindings = <&LR_enDKT>;
             key-positions = <6 7>;
-            layers = <0 3>;
+            layers = <1 3>;
+            slow-release;
         };
 
         boot_l {
@@ -215,7 +222,7 @@
         LR_brc: LR_brc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LBKT &kp RBKT &kp LEFT_ARROW>;
+            bindings = <&kp LEFT_BRACKET &kp RBKT &kp LEFT_ARROW>;
             label = "LR_BRC";
         };
 
