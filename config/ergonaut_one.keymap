@@ -89,7 +89,7 @@
         };
 
         lr_uDQT {
-            bindings = <&LR_ruDKT>;
+            bindings = <&LR_DKT>;
             key-positions = <6 7>;
             layers = <1 4>;
         };
@@ -222,7 +222,7 @@
         enBrct: enBrct {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to_en_fast &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW &to_ru_fast>;
+            bindings = <&to_en &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW &to_ru>;
             label = "ENBRCT";
         };
 
@@ -236,11 +236,11 @@
         en_LR_brs: en_LR_brs {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to_en_fast &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW &to_ru_fast>;
+            bindings = <&to_en &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW &to_ru>;
             label = "EN_LR_BRS";
         };
 
-        LR_ruDKT: LR_ruDKT {
+        LR_DKT: LR_ruDKT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RU_DOUBLE_QUOTES &kp RU_DOUBLE_QUOTES &kp LEFT_ARROW>;
@@ -250,7 +250,7 @@
         LR_enDKT: LR_enDKT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DQT &kp DQT &kp LEFT_ARROW>;
+            bindings = <&to_en &kp DQT &kp DQT &kp LEFT_ARROW &to_ru>;
             label = "LR_ENDKT";
         };
 
